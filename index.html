@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class= "container-fluid">
+        <div class="card">
+            <div class="card-body text center text-black bg-light">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-body text-center">
+
+                        <div class="card" style="width: 20px;">
+                            <div class=" card-body bg-light">
+                                <h2 class="card-subtitle mb-2 text-muted">City Look-Up</h2>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control searchInput" placeholder="City Name"
+                                    aria-label="Recipient's username" aria-describedby="btn">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-seconday bg-primary searchButton" type="button"
+                                        id="btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <ul class="list group">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 mr-5">
+                    <div class="card currentCard pb-2 pt-1">
+                        <h3 class="card-title mt-2 text-center">Current Forecast</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <div class="card pb-5 fivedayCard pl-5">
+                            <h4 class="card-title mt-2 mr-5">Weekly Forecast</h4>
+                            <div class="row">
+                                <div class="col fiveDayOne">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+<script src = "script.js"></script>
+</body>
+</html>
