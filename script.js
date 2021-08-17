@@ -19,10 +19,10 @@ let keyCount = 0;
 
 searchButton.click(function () {
     let searchInput = $(".searchInput").val();
-    let urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "$Appide=" + apiKey + "&units=imperial";
-    let urlFiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "$Appide=" + apiKey + "&units=imperial";
+    let urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&appid=" + apiKey + "&units=imperial";
+    let urlFiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&appid=" + apiKey + "&units=imperial";
 
-    if (searchInput == "") {
+    if (searchInput === "") {
         console.log(searchInput);
     } else {
         $.ajax({
@@ -66,7 +66,7 @@ searchButton.click(function () {
 
         $.ajax({
             url: urlFiveDay,
-            method: "GET"
+            method: "GET",
         }).then(function(response) {
             let day = [0, 8, 16, 24, 32];
             let fiveDayCard = $(".fiveDayCard").addClass("card-body");
