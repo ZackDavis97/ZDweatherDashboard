@@ -1,0 +1,8 @@
+.fiveDayColor {
+    color: white;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    background-color: blue;
+    border: 2px solid grey;
+}
